@@ -1,0 +1,89 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Venda seu equipamento</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <form name="frm" method="post" action="ProductController"
+                style="display: flex; flex-direction: column; align-items: center;">
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="typeConsole">Tipo de console:</label>
+                    <select name="typeConsole">
+                        <option value="new">Novo</option>
+                        <option value="retro">Retro</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="situation">Situação:</label>
+                    <select name="situation">
+                        <option value="excellent">Excelente</option>
+                        <option value="veryGood">Muito bom</option>
+                        <option value="good">Bom</option>
+                        <option value="fair">Razoável</option>
+                        <option value="poor">Ruim</option>
+                        <option value="terrible">Péssimo</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="factorySeals">Selos de fábrica:</label>
+                    <select name="factorySeals">
+                        <option value="intact">Intacto</option>
+                        <option value="violated">Violado</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="originalBox">Caixa original:</label>
+                    <select name="originalBox">
+                        <option value="true">Vai com caixa original</option>
+                        <option value="false">Sem caixa</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="invoice">Nota fiscal:</label>
+                    <select name="invoice">
+                        <option value="true">Acompanha NF</option>
+                        <option value="false">Não acompanha NF</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="controls">Controles:</label>
+                    <select name="controls">
+                        <option value="none">Nenhum</option>
+                        <option value="one">Um</option>
+                        <option value="twoOrMore">Dois ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="accompaniesGames">Acompanha jogos?</label>
+                    <select name="accompaniesGames">
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="year">Ano:</label>
+                    <input type="text" name="year">
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="price">Preço:</label>
+                    <input type="number" name="price">
+                </div>
+                <label for="inputCommentaries">Insira comentários que achar necessários:</label>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <input type="text" id="inputCommentaries" name="commentaries" placeholder="Comentários"
+                        style="width: 200px; height: 70px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <input type="submit" value="Publicar anúncio">
+                </div>
+            </form>
+        </div>
+    </body>
+
+    </html>
