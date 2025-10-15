@@ -18,10 +18,12 @@
             <input type="password" id="inputPassword" name="password" placeholder="Insira sua senha" style="width: 200px;">
         </div>
         <div style="display: flex; gap: 10px; margin-top: 10px;">
-            <a href="ProductController">
+            <a href="menuOpcoes.jsp">
                 <button type="button">Login</button>
             </a>
-            <input type="submit" id="insert" value="Cadastre-se">
+            <a href="menuOpcoes.jsp">
+                <button type="button">Cadstre-se</button>
+            </a>
         </div>
     </form>
 </div>
